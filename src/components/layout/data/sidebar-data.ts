@@ -1,4 +1,5 @@
 import {
+  IconApiApp,
   IconBarrierBlock,
   IconBrowserCheck,
   IconBug,
@@ -14,10 +15,12 @@ import {
   IconPalette,
   IconServerOff,
   IconSettings,
+  IconShieldCheck,
+  IconShieldSearch,
   IconTool,
   IconUserCog,
   IconUserOff,
-  IconUsers,
+  IconUsers
 } from '@tabler/icons-react'
 import { AudioWaveform, Command, GalleryVerticalEnd } from 'lucide-react'
 import { type SidebarData } from '../types'
@@ -177,6 +180,26 @@ export const sidebarData: SidebarData = {
           title: 'Help Center',
           url: '/help-center',
           icon: IconHelp,
+        },
+      ],
+    },
+    {
+      title: 'Security',
+      items: [
+        {
+          title: 'APIs',
+          url: '/apis',
+          icon: IconApiApp,
+        },
+        {
+          title: 'API Onboarding',
+          url: '/onboarding',
+          icon: IconShieldSearch,
+        },
+        {
+          title: 'Security Scans',
+          url: '/scans',
+          icon: IconShieldCheck,
         },
       ],
     },
